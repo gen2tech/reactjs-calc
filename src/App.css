@@ -1,0 +1,144 @@
+body{
+	font-family: 'Open Sans',sans-serif;
+	background-color: white;
+}
+#container{
+	width: 1000px;
+	height: 560px;
+	margin: 20px auto;	
+}
+#calculator{
+	width: 320px;
+	height: 530px;
+	background-color: #eaedef;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#result{
+	height: 130px;	
+	background-color: #cecece;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#output{
+	text-align: right;
+	height: 65px;
+	margin: 0;
+	padding-top: 25px;
+	font-size: 30px;
+	width:100%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom:1px dotted black;
+}
+#output-value{
+	padding-right:20px;
+	padding-left:20px;
+	max-width:100%;
+	overflow:hidden;
+}
+#history{
+	text-align: right;
+	height: 60px;
+	margin: 0;
+	padding-top: 10px;
+	font-size: 15px;
+	width:100%;	
+	background-color: #000;
+	color:#fff;
+}
+#history-value{
+	padding-right:20px;
+	padding-left:20px;
+	max-width:100%;
+	overflow:hidden;
+}
+
+.auto-scaling-text {
+  display: inline-block;
+}
+
+#keyboard{
+	height: 400px;
+	background-color: #4e4e4e;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.operator, .number, .function{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+  background-color: #1f2525;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  border-left: 0;
+  border-right: 1px solid rgba(255,255,255,0.04);
+  border-top: 0;
+  box-shadow: inset -1px -1px 0 0 rgba(0,0,0,0.3);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  outline: none;
+  width: 25%;
+}
+.number, .function{
+	background-color: #fff;
+	color:#1f2525;
+}
+.function{
+  background-color: #1f2525;
+  color: #fff;
+}
+.operator:active, .number:active, .function:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .function:focus{
+	outline: 0;
+}
+button.divide{
+	font-size: 20px;
+	background-color: #20b2aa;
+}
+button.multiply{
+	font-size: 20px;
+	background-color: #ffa500;
+}
+button.minus{
+	font-size: 20px;
+	background-color: #f08080;
+}
+button.plus{
+	font-size: 20px;
+	background-color: #7d93e0;
+}
+button.equal{
+	font-size: 20px;
+	background-color: #9477af;
+}
+
+.soundIcon {
+  cursor: pointer;
+  fill: #1f2525;
+  height: 22px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 25px;
+  z-index: 1;
+}
+.soundIconLink:active{
+	font-size: 13px;
+}
